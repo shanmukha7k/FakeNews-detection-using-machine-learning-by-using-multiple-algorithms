@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Fake News Detection</title>
+      <style>
+            .container {
+            overflow: hidden;
+            margin-left: 30px;
+            }
+
+            img {
+            float: right;
+            margin-right: 20px;
+            width: 600px;
+            height:auto;
+            }
+
+            p {
+            float: left;
+            width: 40%;
+            }
+      </style>
+  </head>
+  <body class="bg-gray-200">
+    <header class="text-gray-600 body-font -my-8">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span class="ml-3 text-xl">Fake News Detection</span>
+              </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="/" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="/about" class="mr-5 hover:text-gray-900">About</a>
+            <a href="/prediction" class="mr-5 hover:text-gray-900">prediction</a>
+          </nav>
+        </div>
+    </header><hr>
+    <br>
+            <h1 class="title-font sm:text-3xl text-3xl mb-4 font-medium text-gray-900">Algorithms</h1>
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">1. Passive Aggressive Classifier </h2>
+                <div class="container">
+                    <p>The passive-aggressive classifier is a type of machine learning algorithm used for natural language processing tasks, such as text classification or sentiment analysis. It is an online learning algorithm that learns from new data in real-time without needing to retrain the entire model. The algorithm makes predictions based on the most recent set of training examples, and updates its model aggressively when it makes a mistake, allowing it to quickly adapt to changes in the data. The passive-aggressive classifier has been used in a variety of applications, but its accuracy depends on the quality of the data it's trained on.</p>
+
+                    <img class="image" src="data:image/jpeg;base64,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">
+                </div>
+
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">2. Decision Tree Classifier</h2>
+                <div class="container">
+                    <p>A Decision Tree classifier is a machine learning algorithm that uses a tree structure to make predictions based on input features. It splits the data into subsets based on the values of the features to maximize the information gain at each step. The resulting tree can be easily understood and visualized, but may suffer from overfitting and instability issues. Techniques such as pruning, ensemble methods, and boosting can improve performance and robustness.</p>
+                    <img src="https://static.javatpoint.com/tutorial/machine-learning/images/decision-tree-classification-algorithm.png">
+                </div>
+
+                <h2 class="text-gray-900 text-lg title-font font-medium mb-2">3. Random Forest Classifier</h2>
+                <div class="container">
+                    <p>Random forest classifier is a machine learning algorithm that uses an ensemble of decision trees to improve classification accuracy. It randomly selects a subset of features and samples from the data to build multiple decision trees, and then combines their predictions to make a final prediction. It is a powerful algorithm that can handle high-dimensional data and nonlinear relationships between variables. Random forest can also detect important features and handle missing data, making it a popular choice for classification tasks.</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Random_forest_diagram_complete.png">
+                </div>
+
+
+
+  </body>
+</html>
